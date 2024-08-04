@@ -1,0 +1,39 @@
+.carousel {
+    max-width: 80%;
+    margin: auto;
+}
+.carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.carousel .slick-slide .circle {
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddd; /* Optional: add border for better visibility */
+}
+.carousel .slick-slide .circle img {
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 50%; /* Ensure the image itself is clipped to a circle */
+}
+
+.slick-prev, .slick-next {
+    color: #333; /* Change this color to make arrows more visible */
+}
+.slick-prev:before, .slick-next:before {
+    color: #333; /* Change this color to make arrows more visible */
+    font-size: 24px; /* Optional: increase size for better visibility */
+}
+
+.slick-dots{
+    position: relative;
+    bottom: 0px;
+}
